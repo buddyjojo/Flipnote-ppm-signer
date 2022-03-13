@@ -17,14 +17,14 @@ A hex editor, any one should do.
 
 2. Follow this guide up to step 6 to dump the memory to a hex file: https://nsmbhd.net/thread/983-making-a-ram-dump-and-importing-it-in-ida-pro-tutorial/
 
-3. Open the memory dump in a hex editor and search for the string "FIXME"
+3. Open the memory dump in a hex editor and search for the string "30 82 02 5C" (This is the key header)
 
 4. Copy from the start of that said string all the way to the bottom and paste it into a new file or something. 
 (This is because I couldn't find out where it ends but luckily it doesn't matter for openssl)
 
-5. run "FIXME" on the file that starts with that string that you made somehow. 
+5. run "openssl rsa -inform DER -in [FILE] -out ppm-privkey.pem" on the file that starts with that string (30 82 02 5C) that you made somehow. 
 
-6. There's the key! just save the output to a .pem file.
+6. There's the key!
 
 # Credits 
 
