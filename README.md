@@ -1,4 +1,4 @@
-# Flipnote-ppa-signer
+# Flipnote-ppm-signer
 This is a simple shell script (sorry windows users) for signing Flipnote ppm's
 
 # How to get the private key
